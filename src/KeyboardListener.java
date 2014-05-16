@@ -5,22 +5,22 @@ import java.awt.event.KeyEvent;
  	
  		public void keyPressed(KeyEvent e){
  		    switch(e.getKeyCode()){
-		    	case 39:	// -> Right 
+		    	case KeyEvent.VK_RIGHT:	 
 		    				//if it's not the opposite direction
 		    				if(ThreadsController.directionSnake!=2) 
 		    					ThreadsController.directionSnake=1;
 		    			  	break;
-		    	case 38:	// -> Top
+		    	case KeyEvent.VK_UP:	
 							if(ThreadsController.directionSnake!=4) 
 								ThreadsController.directionSnake=3;
 		    				break;
 		    				
-		    	case 37: 	// -> Left 
+		    	case KeyEvent.VK_LEFT: 	
 							if(ThreadsController.directionSnake!=1)
 								ThreadsController.directionSnake=2;
 		    				break;
 		    				
-		    	case 40:	// -> Bottom
+		    	case KeyEvent.VK_DOWN:	
 							if(ThreadsController.directionSnake!=3)
 								ThreadsController.directionSnake=4;
 		    				break;
